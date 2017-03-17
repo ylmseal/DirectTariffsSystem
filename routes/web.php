@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/**
+ * 系统登录路由
+ */
+Route::match(['get', 'post'], '/', 'PagesController@login')->name('login');
+
+/**
+ * 系统登录默认页
+ */
+Route::get('/index', 'IndexController@index')->name('index');

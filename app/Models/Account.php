@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
-* 
+* 帐户信息
 */
 class Account extends Model
 {
